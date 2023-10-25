@@ -9,7 +9,6 @@ import Humedad from './componentes/Humedad';
 import Precipitacion from './componentes/Precipitacion';
 import Visibilidad from './componentes/Visibilidad';
 import Cuadro from './componentes/Cuadro';
-
 import './App.css';
 
 
