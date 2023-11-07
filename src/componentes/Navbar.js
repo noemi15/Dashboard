@@ -3,18 +3,18 @@ import React from 'react'
 function Navbar() {
   return (
 
-        <ul className="nav nav-tabs navbar-expand-lg">
+        <ul className="nav nav-tabs navbar-expand-lg fixed-top">
             <li className="nav-item">
-                <span className="nav-link active" aria-current="page">
+                <a className="nav-link " aria-current="page" href="#clima">
                 Clima
-                </span>
+                </a>
             </li>
   
   
             <li className="nav-item">
-                <span className="nav-link disabled" aria-disabled="true">
+                <a className="nav-link "   href="#transporte">
                 Transporte
-                </span>
+                </a>
             </li>
         </ul>
 

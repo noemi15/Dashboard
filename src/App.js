@@ -9,22 +9,25 @@ import Humedad from './componentes/Humedad';
 import Precipitacion from './componentes/Precipitacion';
 import Visibilidad from './componentes/Visibilidad';
 import Cuadro from './componentes/Cuadro';
+
+import Transporte from './componentesTransporte/Transporte';
 import './App.css';
 
 
 function App() {
   return (
     <div>
-    <head> 
-      
-    </head>
-    <body>
-    <Navbar/>  
-        <div className='container p-5 my-3 '>
+      <head>
+
+      </head>
+      <body>
+        <Navbar />
+        <br/><br/>
+        <div id="clima" className='container p-5 my-3 '>
           <div className='row'>
-              <div className='col principal col-lg-4'>
-              <Weather/>
-              </div>
+            <div className='col principal col-lg-4'>
+              <Weather />
+            </div>
 
             <div className='col col-lg-7 '>
               <div >
@@ -33,52 +36,56 @@ function App() {
 
               <div className='row segundo'>
                 <div className='col extremos'>
-                  <UV/>
-                </div>
-                
-                <div className='col extremos'>
-                 <VelocidadViento/>
+                  <UV />
                 </div>
 
                 <div className='col extremos'>
-                <Amanecer/>
+                  <VelocidadViento />
                 </div>
 
-          </div>
+                <div className='col extremos'>
+                  <Amanecer />
+                </div>
+
+              </div>
 
             </div>
-            
+
           </div>
 
-          
+
           <div className='row'>
             <div className='col col-lg-4'>
-              
+
               <div className='row extremos'>
-               <TempMax/>    <TempMin/> 
+                <TempMax />    <TempMin />
 
               </div>
             </div>
-           
+
             <div className='col extremos '>
-             <Humedad/>
+              <Humedad />
             </div>
 
             <div className='col extremos' >
-              Visibilidad <Visibilidad/>
+              Visibilidad <Visibilidad />
             </div>
 
             <div className='col extremos'>
-            Precipitacion <Precipitacion/>
-
+              Precipitacion <Precipitacion />
             </div>
-
           </div>
-
-
         </div>
-       
-    </body>
+
+        <br/><br/>
+        <div id="transporte" className='container p-5 my-3 '>
+          
+          <div className="row ">
+            <Transporte/>      
+          </div>
+        </div>
+
+      </body>
 
     </div>
   );

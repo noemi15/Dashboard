@@ -1,11 +1,11 @@
-//import { useState } from 'react'
+
 import { useFetch } from '../useFetch'
 import Icons from './Icons'
 import SensacionTermica from './SensacionTermica'
 
 function Weather() {
   const { weather, loading, error } = useFetch("https://api.open-meteo.com/v1/forecast?latitude=-34&longitude=-64&current=temperature_2m,apparent_temperature,is_day,weathercode,windspeed_10m&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,precipitation,weathercode&daily=weathercode&timezone=auto")
-  //const [icon, setIcon] = useState("")
+ 
 
   const today = new Date()
   const f = new Intl.DateTimeFormat("es-ar", { dateStyle: "full" })
