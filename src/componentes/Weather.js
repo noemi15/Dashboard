@@ -1,4 +1,3 @@
-
 import { useFetch } from '../useFetch'
 import Icons from './Icons'
 import SensacionTermica from './SensacionTermica'
@@ -109,7 +108,7 @@ function Weather() {
         {error && <li> Error : {error}  </li>}
         {loading && <li> Loading...   </li>}
         <br />
-        <p><img src={Icons(weather && weather.current.weathercode)} alt="iconos" className="rounded float-start" /> </p>
+        <p><img src={Icons(weather && weather.current.weathercode)} alt="iconos" className="rounded float-start weather" /> </p>
 
         <h1 className='temp'>{weather && weather.current.temperature_2m.toFixed(0)} {weather && weather.current_units.temperature_2m}</h1>
         <h2>{mensaje}</h2>

@@ -6,10 +6,10 @@ function Visibilidad() {
        
     
   return (
-    <div >
+    <div style={{marginTop:'15px'}}>
       {error && <li> Error : {error}  </li>}
       {loading && <li> Loading...   </li>}
-
+      <p> Visibilidad</p>
       <p className='temp'>{weather && weather.hourly.visibility[0]*0.001}  km </p>  
      
      

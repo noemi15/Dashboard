@@ -11,7 +11,7 @@ function Humedad() {
       {error && <li> Error : {error}  </li>}
       {loading && <li> Loading...   </li>}
 
-      <p className='temp'>
+      <p className='temp' style={{marginTop:'15px'}}>
         <img src='./icons/humidity.svg' alt="humedad" className="rounded float-start pequeño"/>
         <p>Humedad</p>
         {weather && weather.current.relativehumidity_2m}  {weather && weather.current_units.relativehumidity_2m} </p>  

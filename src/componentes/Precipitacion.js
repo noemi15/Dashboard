@@ -6,10 +6,10 @@ function Precipitacion() {
        
     
   return (
-    <div >
+    <div style={{marginTop:'15px'}} >
       {error && <li> Error : {error}  </li>}
       {loading && <li> Loading...   </li>}
-
+      <p>Precipitacion </p>
       <p className='temp'>{weather && weather.current.precipitation}  {weather && weather.current_units.precipitation} </p>  
      
      

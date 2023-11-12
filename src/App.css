@@ -1,13 +1,13 @@
 .container {
-    background-color: rgb(243, 227, 195);
-    background-image: linear-gradient(to bottom right, rgb(96, 96, 248),rgb(243, 227, 195));
+    background-color: none;
     text-align: center;
-    color:dimgrey;
+    color:rgb(76, 76, 76);
+    font-weight: 400;
     
 
 }
 .col{
-    background-color: beige;
+    background-color: rgba(245, 245, 220, 0.5);
     font-size: 30px;
     border: none;
     border-radius: 15px;
@@ -16,16 +16,20 @@
     
 }
 .principal{
-    height: 400px;
+    height: 450px;
 }
 
 .row{
-   margin-top: 0px;
+   
+  
+   margin-left: 10px;
+   margin-right: 10px;
    text-align: center;
 }
 
 .segundo{
     height: 150px;
+    margin-top: 30px;
 }
 
 .nav{
@@ -53,7 +57,7 @@
     color:dimgrey;
 }
 
-.rounded  {
+.weather  {
     position: relative;
     width: 200px;
     height: 200px;
@@ -70,10 +74,9 @@
 
 .extremos{
     font-size:20px; 
-}
+    }
 
 .pequeño{
-   
     width: 80px;
     height: 80px;  
 }
@@ -84,12 +87,28 @@
     height: 40px;  
 }
 
-.col-lg-7{
-    width: 790px;
-}
-
 .leaflet-container {
     width: 100wh; 
     height: 80vh;
   }
+
+.transporte{
+    background-image: linear-gradient(to bottom right, rgb(96, 96, 248),rgb(243, 227, 195));
+}
+
+.table{
+    font-size:16px; 
+}
   
+.sieteDias{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+tr{
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
